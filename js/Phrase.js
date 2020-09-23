@@ -10,12 +10,12 @@ class Phrase {
      * addPhraseToDisplay takes the phrase of the class and adds it to the screen
      */
     addPhraseToDisplay() {
-        const phraseUl = document.getElementById('phrase').firstChild;
-        for (let character of phrase) {
+        const phraseUl = document.getElementById('phrase').firstElementChild;
+        for (let character of this.phrase) {
             let li = document.createElement('li');
 
             if (character !== " "){
-                li.classList.add(`hide letter ${character}`);
+                li.classList.add(`hide`, `letter`, `${character}`);
             } else {
                 li.classList.add('space');
             }
@@ -31,7 +31,7 @@ class Phrase {
      * @returns {boolean} returns if the guess was correct or not
      */
     checkLetter (guess) {
-        for (let character of phrase) {
+        for (let character of this.phrase) {
             if (character === guess) {
                 return true;
             }
