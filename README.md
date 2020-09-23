@@ -14,6 +14,6 @@ Features include the following:
 - If player guesses correctly they get a win screen
 - BONUS: User can type on their keyboard to guess letters
 
-#Custom Enhancements
+# Custom Enhancements
 - Changed font to: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 - Changed color of background, hearts and the shown letters
